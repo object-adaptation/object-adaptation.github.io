@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Learning to Design 3D Printable Adaptations on Everyday Objects for Robot Manipulation">
+  <meta name="keywords" content="Manipulation, Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning to Design 3D Printable Adaptations on Everyday Objects for Robot Manipulation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 is-size-2 publication-title">Learning to Design 3D Printable Adaptations on Everyday Objects for Robot Manipulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+							<a href="https://object-adaptation.github.io/">Anonymous</a>
+						</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+						<!-- <span class="author-block">Anonymous</span> -->
+						<!-- <span class="author-block">Paper-ID 147</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+			<center><img width="900" src="./resources/01_teaser_website.png"/></center>
+      <h2 class="subtitle has-text-centered">
+		Inspired by human examples of adaptation, we focus on adapting objects for robots to use in an <i>automated</i> way via learning.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+			<!-- <center><h2 class="title is-3">Tasks</h2></center> -->
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-bucket-mesh">
+          <video poster="" id="bucket-mesh" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/bucket_mesh.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-box-primitive">
+          <video poster="" id="box-primitive" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/box_primitive.MOV"
+                    type="video/mp4">
+          </video>
+				</div>
+        <div class="item item-drawer-handle">
+          <video poster="" id="drawer-handle" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/drawer_handle.MOV"
+                    type="video/mp4">
+					</video>
+        </div>
+        <div class="item item-bucket-primitive">
+          <video poster="" id="bucket-primitive" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/bucket_primitive.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-box-handle">
+          <video poster="" id="box-handle" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/box_handle.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-drawer-primitive">
+          <video poster="" id="drawer-primitive" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/drawer_primitive.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+				<div class="item item-box-mesh">
+          <video poster="" id="box-mesh" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/box_mesh.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+				<div class="item item-drawer-mesh">
+          <video poster="" id="drawer-mesh" autoplay controls muted loop playsinline height="100%">
+            <source src="./resources/drawer_mesh.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+					<p>
+						Advancements in robot learning for object manipulation have shown promising results, yet certain everyday objects remain challenging for robots to effectively interact with.
+This discrepancy arises from the fact that human-designed objects are optimized for human use rather than robot manipulation.
+To address this gap, we propose a framework to automatically design 3D printable adaptations that can be attached to hard-to-use objects, thus improving ``robot ergonomics''.
+Our learning-based framework formulates the adaptation design and control as a dual Markov decision process and is able to improve robot-object interactions for various robot end effectors and objects.
+We further validate our designs in the real world with a Franka Panda robot.
+					</p>
+					 
+
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+	<div class="box">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Framework</h2></center>
+		<br>
+		<img src="./resources/02_methods.png"/>
+		<h2 class="subtitle has-text-centered">
+			Overview of our framework. We formulate the design and control as a dual Markov decision process and adopt a reinforcement learning framework to jointly optimize them.
+    </h2>
+	</div>
+</div>
+</section>
+
+<section class="section">
+	<div class="container is-max-desktop">
+		<center><h2 class="title is-3">Comparison of Design Strategies</h2></center>
+		<br>
+		<img src="./resources/04_sim_rewards.png"/>
+		<h2 class="subtitle has-text-centered">
+			Learning curves for varying design strategies. Random designs outperform trying to use the original object with no design, but the learned designs are the best. Shaded regions indicate standard error across a minimum of three random seeds.
+    </h2>
+	</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+					Website template borrowed from <a
+					href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
